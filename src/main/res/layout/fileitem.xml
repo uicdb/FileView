@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="50dp"
+	android:id="@+id/fileitemLayoutRoot"
+	android:descendantFocusability="blocksDescendants">
+
+	<ImageView
+		android:src="@drawable/file_dir"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:layout_margin="5dp"
+		android:id="@+id/fileitemImg"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="NAME"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_toRightOf="@id/fileitemImg"
+		android:id="@+id/fileitemTextViewBig"
+		android:layout_marginTop="3dp"
+		android:singleLine="true"
+		android:layout_marginRight="90dp"
+		android:textColor="@color/colorText"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_below="@id/fileitemTextViewBig"
+		android:layout_toRightOf="@id/fileitemImg"
+		android:singleLine="true"
+		android:id="@+id/fileitemTextViewSmall"
+		android:layout_marginRight="90dp"
+		android:textColor="@color/colorText"/>
+
+	<CheckBox
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:layout_alignParentRight="true"
+		android:id="@+id/fileitemCheckBox"
+		android:layout_marginTop="10dp"/>
+
+	<ImageView
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:layout_toLeftOf="@id/fileitemCheckBox"
+		android:id="@+id/fileitemDelete"
+		android:layout_marginTop="10dp"
+		android:src="@drawable/file_bin"/>
+
+	<ImageView
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:layout_toLeftOf="@id/fileitemDelete"
+		android:layout_marginTop="10dp"
+		android:src="@drawable/file_edit"
+		android:id="@+id/fileitemRename"/>
+
+</RelativeLayout>
+

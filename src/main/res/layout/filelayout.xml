@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.uicdb.app.view.FileView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/colorFileView"
+	android:id="@+id/filelayoutRelativeLayoutRoot">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:id="@+id/filelayoutRelativeLayout">
+
+		<ImageView
+			android:src="@drawable/file_home"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:id="@+id/filelayoutHomeView"
+			android:layout_marginTop="10dp"
+			android:layout_marginRight="5dp"
+			android:layout_marginLeft="10dp"/>
+
+		<CheckBox
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_marginTop="10dp"
+			android:layout_alignParentRight="true"
+			android:gravity="center"
+			android:id="@+id/filelayoutCheckBox1"/>
+
+		<ImageView
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:src="@drawable/file_add"
+			android:layout_toLeftOf="@id/filelayoutCheckBox1"
+			android:layout_marginTop="10dp"
+			android:layout_marginRight="5dp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:text="file path"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_toRightOf="@id/filelayoutHomeView"
+			android:singleLine="true"
+			android:gravity="left|center_vertical"
+			android:layout_marginRight="100dp"
+			android:textColor="@color/colorText"
+			android:id="@+id/filelayoutPathText"/>
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="50dp"
+		android:orientation="horizontal"
+		android:layout_below="@id/filelayoutRelativeLayout"
+		android:id="@+id/filelayoutLinearLayoutHeader">
+
+		<ImageView
+			android:src="@drawable/file_back"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_margin="10dp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="…"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:singleLine="true"
+			android:textColor="#FFFFFFFF"/>
+
+	</LinearLayout>
+
+	<com.uicdb.app.view.SimpleFileView
+		android:layout_below="@id/filelayoutLinearLayoutHeader"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginBottom="40dp"
+		android:id="@+id/filelayoutSimpleFileView"/>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="40dp"
+		android:orientation="horizontal"
+		android:layout_alignParentBottom="true"
+		android:id="@+id/filelayoutLinearLayoutBottom">
+
+		<!--<ImageView
+			android:gravity="center"
+			android:src="@drawable/file_add"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1.0"/>-->
+
+		<ImageView
+			android:gravity="center"
+			android:src="@drawable/file_edit"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1.0"/>
+
+		<ImageView
+			android:gravity="center"
+			android:src="@drawable/file_add"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1.0"/>
+
+		<ImageView
+			android:gravity="center"
+			android:src="@drawable/file_bin"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="1.0"/>
+
+	</LinearLayout>
+</com.uicdb.app.view.FileView>
+
+
+
